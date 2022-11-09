@@ -368,6 +368,8 @@ body {
 .filter-btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects-list .title {
@@ -422,6 +424,11 @@ body {
 .flex-element:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+
+.flex-element:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /* Альтернатива
 .flex-element:not(:nth-child(3n)){
     margin-right: 30px;
@@ -429,3 +436,49 @@ body {
 .flex-element:not(:nth-last-child(-n + 3)){
     margin-bottom: 30px;
 } */
+
+/* Homework4 */
+.icon {
+  fill: var(--primary-text-color);
+}
+.icon:hover {
+  fill: var(--accent-color);
+}
+
+.team-icon-list {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-icon-item {
+  width: 44px;
+  height: 44px;
+}
+.social-icon {
+  /* fill: #afb1b8; */
+}
+
+.team-icon-link {
+  fill: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.team-icon-link:hover {
+  background-color: var(--accent-color);
+  fill: white;
+}
+
+.feature-svg {
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-grey-color);
+}
