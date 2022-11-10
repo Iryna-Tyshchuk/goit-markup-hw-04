@@ -441,13 +441,14 @@ body {
 
 /* Homework4 */
 .icon {
-  fill: var(--primary-text-color);
+  fill: currentColor;
   margin-right: 10px;
 }
 
 .icon:hover,
 .icon:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
+  color: var(--accent-color);
 }
 
 .team-icon-list {
@@ -462,9 +463,6 @@ body {
 .team-icon-item {
   width: 44px;
   height: 44px;
-}
-.social-icon {
-  /* fill: #afb1b8; */
 }
 
 .team-icon-link {
@@ -517,20 +515,21 @@ body {
   margin: 0;
 }
 
-.our-clients-item {
-  /* fill: var(--primary-text-color); */
-}
 .our-clients-link {
-  display: flex;
-  fill: var(--primary-text-color);
+  fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-
-.our-clients-svg {
   width: 170px;
   height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* .our-clients-svg {
+  width: 170px;
+  height: 92px;
+} */
 
 .our-clients-link:hover,
 .our-clients-link:focus {
@@ -573,8 +572,6 @@ body {
   fill: var(--primary-white-color);
   background: rgba(255, 255, 255, 0.1);
 }
-.social-icon {
-}
 
 .footer-icon-link:hover,
 .footer-icon-link:focus {
@@ -584,5 +581,5 @@ body {
 
 .footer > .container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
